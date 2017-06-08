@@ -41,6 +41,7 @@
             this.Menu_button_Close = new System.Windows.Forms.Button();
             this.Header = new System.Windows.Forms.Label();
             this.Search_menu = new System.Windows.Forms.Panel();
+            this.Search_menu_button_CleanAll = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Search_menu_label7 = new System.Windows.Forms.Label();
             this.Search_menu_PriceTo = new System.Windows.Forms.TextBox();
@@ -71,7 +72,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.propertyDataGridView = new System.Windows.Forms.DataGridView();
-            this.Search_menu_button_CleanAll = new System.Windows.Forms.Button();
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.propertyDBDataSet = new SmartWorker.PropertyDBDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,7 +105,7 @@
             // 
             // Menu_panel
             // 
-            this.Menu_panel.BackColor = System.Drawing.Color.White;
+            this.Menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
             this.Menu_panel.Controls.Add(this.label2);
             this.Menu_panel.Controls.Add(this.Menu_button_Property);
             this.Menu_panel.Controls.Add(this.Menu_button_Search);
@@ -143,7 +143,7 @@
             // 
             // Menu_button_Search
             // 
-            this.Menu_button_Search.BackColor = System.Drawing.Color.White;
+            this.Menu_button_Search.BackColor = System.Drawing.Color.Transparent;
             this.Menu_button_Search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu_button_Search.BackgroundImage")));
             this.Menu_button_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Menu_button_Search.FlatAppearance.BorderSize = 0;
@@ -258,6 +258,20 @@
             this.Search_menu.Name = "Search_menu";
             this.Search_menu.Size = new System.Drawing.Size(180, 500);
             this.Search_menu.TabIndex = 8;
+            // 
+            // Search_menu_button_CleanAll
+            // 
+            this.Search_menu_button_CleanAll.BackColor = System.Drawing.Color.Transparent;
+            this.Search_menu_button_CleanAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_menu_button_CleanAll.BackgroundImage")));
+            this.Search_menu_button_CleanAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Search_menu_button_CleanAll.FlatAppearance.BorderSize = 0;
+            this.Search_menu_button_CleanAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_menu_button_CleanAll.Location = new System.Drawing.Point(14, 440);
+            this.Search_menu_button_CleanAll.Name = "Search_menu_button_CleanAll";
+            this.Search_menu_button_CleanAll.Size = new System.Drawing.Size(40, 40);
+            this.Search_menu_button_CleanAll.TabIndex = 16;
+            this.Search_menu_button_CleanAll.UseVisualStyleBackColor = false;
+            this.Search_menu_button_CleanAll.Click += new System.EventHandler(this.Search_menu_button_CleanAll_Click);
             // 
             // label1
             // 
@@ -595,20 +609,6 @@
             this.propertyDataGridView.Size = new System.Drawing.Size(742, 470);
             this.propertyDataGridView.TabIndex = 10;
             this.propertyDataGridView.Click += new System.EventHandler(this.propertyDataGridView_Click);
-            // 
-            // Search_menu_button_CleanAll
-            // 
-            this.Search_menu_button_CleanAll.BackColor = System.Drawing.Color.Transparent;
-            this.Search_menu_button_CleanAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_menu_button_CleanAll.BackgroundImage")));
-            this.Search_menu_button_CleanAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Search_menu_button_CleanAll.FlatAppearance.BorderSize = 0;
-            this.Search_menu_button_CleanAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_menu_button_CleanAll.Location = new System.Drawing.Point(14, 440);
-            this.Search_menu_button_CleanAll.Name = "Search_menu_button_CleanAll";
-            this.Search_menu_button_CleanAll.Size = new System.Drawing.Size(40, 40);
-            this.Search_menu_button_CleanAll.TabIndex = 16;
-            this.Search_menu_button_CleanAll.UseVisualStyleBackColor = false;
-            this.Search_menu_button_CleanAll.Click += new System.EventHandler(this.Search_menu_button_CleanAll_Click);
             // 
             // bindingSource
             // 
